@@ -1,10 +1,12 @@
 Summary:	DVD navigation plugin for Xine
 Summary(pl):	Plugin DVD dla Xine
 Name:		xine-dvdnav
-Version:	0.9.8.beta
+Version:	0.9.8.beta2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
+Group(de):	X11/Applikationen/Multimedia
+Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://prdownloads.sourceforge.net/dvd/%{name}-%{version}.tar.gz
 URL:		http://dvd.sourceforge.net/
 BuildRequires:	autoconf
@@ -38,7 +40,7 @@ rm -f missing
 libtoolize --copy --force
 aclocal
 autoconf
-automake -a -c -f
+automake -a -c
 %configure
 %{__make}
 
