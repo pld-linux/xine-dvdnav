@@ -12,9 +12,10 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdvdread-devel
 BuildRequires:	libtool
-BuildRequires:	xine-lib-devel >= 0.9.12
+BuildRequires:	xine-lib-devel >= 0.9.10
 BuildRequires:	libdvdnav-devel >= 0.1.0
-Requires:	xine-ui
+Conflicts:	xine-lib > 0.9.12
+Requires:	xine-ui >= 0.9.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
