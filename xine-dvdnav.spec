@@ -5,8 +5,6 @@ Version:	0.9.5.beta
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://prdownloads.sourceforge.net/dvd/%{name}-%{version}.tar.gz
 URL:		http://dvd.sourceforge.net/
 BuildRequires:	autoconf
