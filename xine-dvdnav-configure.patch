@@ -1,0 +1,11 @@
+diff -uNr xine-dvdnav-0.9.12.orig/configure.in xine-dvdnav-0.9.12/configure.in
+--- xine-dvdnav-0.9.12.orig/configure.in	Sun Jun 30 15:56:32 2002
++++ xine-dvdnav-0.9.12/configure.in	Sat Aug 10 23:01:58 2002
+@@ -89,7 +89,6 @@
+ AC_C_INLINE
+ AC_TYPE_OFF_T
+ AC_TYPE_SIZE_T
+-AM_TYPE_PTRDIFF_T
+ 
+ AC_SUBST(DEBUG_CFLAGS)
+ AC_SUBST(GLOBAL_CFLAGS)
