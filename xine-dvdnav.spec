@@ -1,7 +1,7 @@
 Summary:	DVD navigation plugin for Xine
 Summary(pl):	Plugin DVD dla Xine
 Name:		xine-dvdnav
-Version:	0.9.5.beta
+Version:	0.9.8.beta
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
