@@ -1,7 +1,7 @@
 Summary:	DVD navigation plugin for Xine
 Summary(pl):	Wtyczka DVD dla Xine
 Name:		xine-dvdnav
-Version:	0.9.12
+Version:	0.9.13
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
@@ -12,10 +12,9 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdvdread-devel
 BuildRequires:	libtool
-BuildRequires:	xine-lib-devel >= 0.9.10
+BuildRequires:	xine-lib-devel >= 0.9.13
 BuildRequires:	libdvdnav-devel >= 0.1.0
-Conflicts:	xine-lib > 0.9.12
-Requires:	xine-ui >= 0.9.10
+%requires_eq	xine-lib
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -35,7 +34,7 @@ do odtwarzania kodowanych p³yt DVD.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 rm -f missing
