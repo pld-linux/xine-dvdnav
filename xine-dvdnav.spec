@@ -6,7 +6,6 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/dvd/%{name}-%{version}.tar.gz
-Patch0:		%{name}-configure.patch
 URL:		http://dvd.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -34,7 +33,6 @@ do odtwarzania kodowanych p³yt DVD.
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
 rm -f missing
