@@ -20,8 +20,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is DVD-navigation plugin for xine.
 
+If you also have libdvdcss installed it will 
+make xine play CSS-encrypted DVDs.
+
 %description -l pl
 Plugin nawigacji DVD dla xine.
+
+Gdy jest zainstalowany tak¿e pakiet libdvdcss modu³ ten mo¿e
+s³u¿yæ do odtwarzania kodowany p³yt DVD.
 
 %prep
 %setup -q
