@@ -1,17 +1,18 @@
 Summary:	DVD navigation plugin for Xine
 Summary(pl):	Wtyczka DVD dla Xine
 Name:		xine-dvdnav
-Version:	0.9.9
+Version:	0.9.12
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://telia.dl.sourceforge.net/sourceforge/dvd/xine-dvdnav-0.9.9.tar.gz
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/dvd/%{name}-%{version}.tar.gz
+Patch0:		%{name}-configure.patch
 URL:		http://dvd.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdvdread-devel
 BuildRequires:	libtool
-BuildRequires:	xine-lib-devel >= 0.9.9
+BuildRequires:	xine-lib-devel >= 0.9.12
 BuildRequires:	libdvdnav-devel >= 0.1.0
 Requires:	xine-ui
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,6 +34,7 @@ do odtwarzania kodowanych p³yt DVD.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
@@ -50,12 +52,10 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	docdir=$RPM_BUILD_ROOT%{_datadir}/doc/xine
 
-gzip -9nf *README* AUTHORS ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc *README* AUTHORS ChangeLog
 %attr(755,root,root) %{_pluginsdir}/*
