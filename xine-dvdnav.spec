@@ -5,7 +5,7 @@ Version:	0.9.13
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/dvd/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/dvd/%{name}-%{version}.tar.gz
 URL:		http://dvd.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
