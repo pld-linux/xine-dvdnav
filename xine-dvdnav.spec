@@ -36,7 +36,7 @@ do odtwarzania kodowanych p³yt DVD.
 
 %build
 rm -f missing
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 %{__autoconf}
 %{__automake}
