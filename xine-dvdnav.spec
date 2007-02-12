@@ -1,5 +1,5 @@
 Summary:	DVD navigation plugin for Xine
-Summary(pl):	Plugin DVD dla Xine
+Summary(pl.UTF-8):   Plugin DVD dla Xine
 Name:		xine-dvdnav
 Version:	0.9.8.beta2
 Release:	1
@@ -26,11 +26,11 @@ This is DVD-navigation plugin for xine.
 If you also have libdvdcss installed it will make xine play
 CSS-encrypted DVDs.
 
-%description -l pl
+%description -l pl.UTF-8
 Plugin nawigacji DVD dla xine.
 
-Gdy jest zainstalowany takøe pakiet libdvdcss modu≥ ten moøe s≥uøyÊ do
-odtwarzania kodowany p≥yt DVD.
+Gdy jest zainstalowany tak≈ºe pakiet libdvdcss modu≈Ç ten mo≈ºe s≈Çu≈ºyƒá do
+odtwarzania kodowany p≈Çyt DVD.
 
 %prep
 %setup -q
