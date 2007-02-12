@@ -1,5 +1,5 @@
 Summary:	DVD navigation plugin for Xine
-Summary(pl.UTF-8):   Wtyczka DVD dla Xine
+Summary(pl.UTF-8):	Wtyczka DVD dla Xine
 Name:		xine-dvdnav
 Version:	0.9.13
 Release:	1
